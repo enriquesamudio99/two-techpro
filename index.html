@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechPro</title>
+    <title>TechPro Headphones</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
@@ -13,5 +13,34 @@
 </head>
 <body>
     
+    <header class="header">
+        <div class="header-content container">
+            <div class="header-img">
+                <picture>
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.avif 1920w"
+                        type="image/avif">
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.webp 1920w" 
+                        type="image/webp">
+                    <source
+                        sizes="1920w" 
+                        srcset="img/header.jpg 1920w" 
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="img/header.jpg" lazyalt="image" width="1000" height="600">
+                </picture>
+            </div> <!-- .header-img -->
+
+            <div class="header-text">
+                <p class="product-tagline">Professional Sound</p>
+                <h1 class="product-name">TechPRO</h1>
+                <p class="product-description">Aenean luctus risus blandit, vulputate neque eget, consectetur nisl. Fusce tristique arcu at quam tincidunt eleifend. Morbi accumsan at tellus ac semper. Sed lectus nibh, vestibulum in mattis vel, finibus ut odio. Cras hendrerit sed libero eget molestie. Maecenas tellus sapien, tristique vitae nisl vel, feugiat lacinia nibh.</p>
+                <p class="product-price">From <span>$299</span></p>
+            </div>
+        </div>
+    </header>
+
 </body>
 </html>
