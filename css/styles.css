@@ -64,6 +64,14 @@ img {
     text-align: center;
 }
 
+/* Gradients */
+.green-gradient {
+    color: transparent;
+    background-image: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 /* Header */
 .header {
     background-color: var(--black);
@@ -128,4 +136,40 @@ img {
     .product-price span {
         font-size: 5.6rem;
     }
+}
+
+/* Icons */
+.icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: var(--gutter) 0;
+}
+
+@media (min-width: 576px) {
+    .icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 5.6rem;
+    margin: 0 auto;
+}
+
+.icon h3 {
+    font-size: 2.4rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 900;
 }
