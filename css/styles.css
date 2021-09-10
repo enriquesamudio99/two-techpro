@@ -4,7 +4,8 @@
 
     --gutter: 5.6rem;
 
-    --primary: #1073ba;
+    /* --primary: #1073ba; */
+    --primary: #0f4972;
     --secondary: #00da55;
     --gray: #3b3b3b;
     --lightGray: #e1e1e1;
@@ -142,7 +143,7 @@ img {
 .icons {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.4rem;
     padding: var(--gutter) 0;
 }
 
@@ -261,7 +262,7 @@ img {
 .list-models {
     display: flex;
     flex-direction: column-reverse;
-    gap: 2rem;
+    gap: 2.4rem;
 }
 
 @media (min-width: 992px) {
