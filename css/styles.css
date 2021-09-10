@@ -167,9 +167,70 @@ img {
     margin: 0 auto;
 }
 
-.icon h3 {
+.icon h2 {
     font-size: 2.4rem;
     color: var(--primary);
     text-transform: uppercase;
     font-weight: 900;
+}
+
+/* About TechPRO */
+.about-tech {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.5) 50%, var(--primary) 0%), url(../img/imagen-mujer.jpg);
+    background-position: right;
+    background-repeat: repeat, no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 992px) {
+    .about-tech {
+        background-image: linear-gradient(to left, rgba(0,0,0,.5) 50%, var(--primary) 0%), url(../img/imagen-mujer.jpg);
+        padding: calc(var(--gutter) * 3) 0;
+    }
+}
+
+.about-tech-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    row-gap: var(--gutter);
+}
+
+@media (min-width: 992px) {
+    .about-tech-grid {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: unset;
+        column-gap: var(--gutter);
+    }
+}
+
+.about-tech-text {
+    grid-row: 2 / 3;
+    color: var(--white);
+}
+
+@media (min-width: 992px) {
+    .about-tech-text {
+        grid-row: unset;
+    }
+}
+
+.about-tech-text h2 {
+    font-size: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    .about-tech-text h2 {
+        font-size: 4rem;
+    }
+}
+
+.about-tech-text p {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .about-tech-text p {
+        font-size: 1.8rem;
+    }
 }
