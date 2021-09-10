@@ -207,11 +207,13 @@ img {
 .about-tech-text {
     grid-row: 2 / 3;
     color: var(--white);
+    text-align: center;
 }
 
 @media (min-width: 992px) {
     .about-tech-text {
         grid-row: unset;
+        text-align: left;
     }
 }
 
@@ -232,5 +234,138 @@ img {
 @media (min-width: 768px) {
     .about-tech-text p {
         font-size: 1.8rem;
+    }
+}
+
+/* Modelos */
+.models {
+    padding: var(--gutter) 0;
+}
+
+.models-header {
+    margin: 0 0 var(--gutter);
+}
+
+@media (min-width: 768px) {
+    .models-header {
+        font-size: 4.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .models-header {
+        font-size: 5.6rem;
+    }
+}
+
+.list-models {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .list-models {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2, 20rem);
+    }
+}
+
+.model {
+    padding: 2.4rem 2.4rem 2.4rem 4rem;
+    background-color: var(--lightGray);
+    border-radius: 2.4rem;
+    color: var(--primary);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 10rem;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .model {
+        background-size: 15rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .model-z {
+        background-size: 25rem;
+    }
+}
+
+.model:hover {
+    transform: scale(1.05);
+}
+
+.model h3 {
+    font-size: 2.4rem;
+    margin: 0 0 1.2rem;
+}
+
+@media (min-width: 992px) {
+    .model h3 {
+        font-size: 3rem;
+    }
+}
+
+.model .price {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .model .price {
+        font-size: 4rem;
+    }
+}
+
+.model-z .price {
+    font-size: 4rem;
+}
+
+@media (min-width: 992px) {
+    .model-z h3 {
+        font-size: 4rem;
+    }
+
+    .model-z .price {
+        font-size: 5.6rem;
+    }
+}
+
+.model-x {
+    background-image: url(../img/modelo-x.svg);
+}
+
+.model-y {
+    background-image: url(../img/modelo-y.svg);
+}
+
+.model-z {
+    background-image: url(../img/modelo-z.svg);
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+@media (min-width: 992px) {
+
+    .model-x {
+        grid-column: 1 / 3;
+    }
+
+    .model-y {
+        grid-column: 1 / 3;
+    }
+
+    .model-z {
+        grid-column: 3 / 5;
+        grid-row: 1 / 3;
     }
 }
