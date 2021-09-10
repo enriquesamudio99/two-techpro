@@ -281,11 +281,15 @@ img {
     background-repeat: no-repeat;
     background-position: 90% center;
     background-size: 10rem;
-    transition: .3s;
+    transition: transform .3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+}
+
+.model:hover {
+    transform: scale(1.05);
 }
 
 @media (min-width: 992px) {
@@ -298,10 +302,6 @@ img {
     .model-z {
         background-size: 25rem;
     }
-}
-
-.model:hover {
-    transform: scale(1.05);
 }
 
 .model h3 {
